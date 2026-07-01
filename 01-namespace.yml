@@ -5,9 +5,3 @@ metadata:
   labels:
     environment: development
     project: roboshop
-spec:
-  containers:
-    name: nginx
-    image: nginx
-    ports:
-      targetPort: 8080
