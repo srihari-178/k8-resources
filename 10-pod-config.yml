@@ -7,8 +7,6 @@ spec:
   containers:
     - name: nginx
       image: nginx
-      ports:
-        containerport: 80
       envFrom:
         - configmapRef:
             name: pod-config
