@@ -3,18 +3,19 @@ kind: ReplicaSet
 metadata:
   name: nginx
   labels:
-    purpose: rs
+    purpose: rs-demo
     project: roboshop
 spec:
   replicas: 3
   selector:
     matchLabels:
-      purpose: rs
+      purpose: rs-demo
       project: roboshop
   template:
     metadata:
-      purpose: rs
-      project: roboshop
+      labels:
+        purpose: rs-demo
+        project: roboshop
     spec:
       containers:
         - name: nginx
