@@ -8,7 +8,7 @@ metadata:
 spec:
   replicas: 3
   selector:
-    matchlabels:
+    matchLabels:
       purpose: rs
       project: roboshop
   template:
